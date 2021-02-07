@@ -1,0 +1,16 @@
+.margin-right-5 {
+    margin-right: 5px
+}
+
+.margin-5 {
+    margin: 0 5px;
+}
+
+.display-flex {
+    display: flex;
+    align-items: center;
+}
+
+.upload-icon, .delete-icon {
+    height: 20px;
+}

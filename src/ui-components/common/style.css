@@ -1,0 +1,78 @@
+/* Header component style */
+
+.title {
+    font-family: sans-serif;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+/* Image Tile component style */
+
+.image-tile {
+    font-family: sans-serif;
+    position: relative;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 19%;
+}
+
+.image-box {
+    max-height: 150px;
+    width: 100%;
+    text-align: center;
+    background: #d6d6d6;
+}
+
+.image {
+    max-height: 150px;
+}
+
+.image-title {
+    font-weight: bold;
+}
+
+.checkbox {
+    position: absolute;
+    top: 5px;
+    left: 5px
+}
+
+/* Upload Image Modal */
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.drop-area {
+    border: 1px dashed darkgray;
+    width: 600px;
+    padding: 20px;
+}
+
+.selected-files {
+    height: 150px;
+    margin: 10px 0;
+    overflow-y: auto;
+}
+
+.no-file {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.file-list {
+    list-style-type: none;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
