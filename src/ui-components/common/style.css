@@ -18,6 +18,13 @@
     flex-basis: 19%;
 }
 
+.image-tile:hover .delete-image-btn {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
 .image-box {
     max-height: 150px;
     width: 100%;
@@ -33,10 +40,18 @@
     font-weight: bold;
 }
 
+.overlay {
+    opacity: 0.5;
+}
+
 .checkbox {
     position: absolute;
     top: 5px;
     left: 5px
+}
+
+.delete-image-btn {
+    display: none;
 }
 
 /* Upload Image Modal */

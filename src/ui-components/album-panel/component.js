@@ -1,25 +1,25 @@
-import React, { Fragment } from 'react';
-import ImageTile from '../common/image-tile';
-import './style.css';
+import React from 'react'
+import ImageTile from '../common/image-tile'
+import './style.css'
 
-const AlbumPanel = ({ images, count, updateSelectedImages }) => {
-    return (
-        <Fragment>
-            <div className='album-images'>
-                {count > 0 &&
-                    <div className='image-row'>
-                        {images.slice(0, count).map(item => (
-                            <ImageTile
-                                key={item.id}
-                                image={item}
-                                updateSelectedImages={updateSelectedImages}
-                            />
-                        ))}
-                    </div>
-                }
-            </div>
-        </Fragment>
-    )
+const AlbumPanel = ({ images, areImagesSelected, updateSelectedImagesForDeletion, deleteImage }) => {
+  return (
+    <>
+      <div className='album-images'>
+        <div className='image-row'>
+          {images.map(item => (
+            <ImageTile
+              key={item.id}
+              image={item}
+              areImagesSelected={areImagesSelected}
+              updateSelectedImagesForDeletion={updateSelectedImagesForDeletion}
+              deleteImage={deleteImage}
+            />
+          ))}
+        </div>
+      </div>
+    </>
+  )
 }
 
 export default AlbumPanel

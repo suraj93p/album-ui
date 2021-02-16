@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.upload-section {
+    cursor: pointer;
+}
+
 .upload-icon, .delete-icon {
     height: 20px;
 }
